@@ -13,8 +13,9 @@
         <parameter value="UTF-8" />
         <parameter value="-Ywarn-dead-code" />
         <parameter value="-Ywarn-numeric-widen" />
+        <parameter value="-Xfuture" />
         <parameter value="-Xfatal-warnings" />
-        <parameter value="-Ywarn-unused:imports" />
+        <parameter value="-Ywarn-unused-import" />
       </parameters>
     </profile>
   </component>
