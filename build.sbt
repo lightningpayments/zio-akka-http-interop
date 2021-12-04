@@ -1,9 +1,9 @@
 import ReleaseTransformations._
 import ReleasePlugin.autoImport._
 
-val zioVersion      = "1.0.10"
-val akkaVersion     = "2.6.15"
-val akkaHttpVersion = "10.2.6"
+val zioVersion      = "1.0.12"
+val akkaVersion     = "2.6.5"
+val akkaHttpVersion = "10.2.7"
 
 val compilerOptions = Seq(
   "-deprecation",
@@ -65,8 +65,8 @@ val root = (project in file("."))
   .settings(
     organization := "io.scalac",
     name := "zio-akka-http-interop",
-    scalaVersion := "2.13.6",
-    crossScalaVersions := Seq("2.12.14", "2.13.6"),
+    scalaVersion := "2.12.10",
+    crossScalaVersions := Seq("2.12.10"),
     scalacOptions ++= {
       if (priorTo2_13(scalaVersion.value)) compilerOptions
       else
